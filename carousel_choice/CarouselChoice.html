@@ -1,0 +1,41 @@
+{% block content %}
+<p>Please review the options below and select the one that most appeals to you.</p>
+
+
+<div class="carousel slide" data-bs-ride="carousel" id="carouselExample">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/991px-Placeholder_view_vector.svg.png" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <p> Placeholder text1 </p>
+                {{ form.carousel_item1 }}
+            </div>
+        </div>
+    <div class="carousel-item">
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/991px-Placeholder_view_vector.svg.png" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <p> Placeholder text2 </p>
+                {{ form.carousel_item2 }}
+            </div>
+        </div>
+
+    <div class="carousel-item">
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/991px-Placeholder_view_vector.svg.png" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <p> Placeholder text3 </p>
+                {{ form.carousel_item3 }}
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#carouselExample" type="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#carouselExample" type="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% next_button %}
+{% endblock %}
